@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".FragmentActivity">
 
 <!--    여기에 fragment붙일거임 (xml로 붙이는 방법)-->
@@ -15,5 +16,27 @@
         android:name="com.example.fragmentpractice.FirstFragment"
         tools:layout="@layout/fragment_first"/>
         <!--    name: 요 프라그먼트 xml을 담당할 프라그먼트-->
+
+    <TextView
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="attach"
+        android:gravity="center"
+        android:background="@color/purple_500"
+        android:textSize="40dp"/>
+    <TextView
+        android:id="@+id/remove"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="remove"
+        android:gravity="center"
+        android:background="@color/purple_500"
+        android:textSize="40dp"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
